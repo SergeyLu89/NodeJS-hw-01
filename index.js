@@ -1,4 +1,3 @@
-// import * as contactsOperations from "./contacts.js";
 const Contacts = require("./contacts");
 
 const { program } = require("commander");

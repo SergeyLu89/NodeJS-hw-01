@@ -9,8 +9,8 @@ async function readFile() {
   return JSON.parse(data);
 }
 
-function writeFile(contacts) {
-  fs.writeFile(contactsPath, JSON.stringify(contacts, undefined, 2));
+async function writeFile(contacts) {
+  await fs.writeFile(contactsPath, JSON.stringify(contacts, undefined, 2));
 }
 
 async function listContacts() {
